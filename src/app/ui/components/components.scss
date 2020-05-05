@@ -1,0 +1,52 @@
+.fader {
+  transition: opacity 1.5s;
+  opacity: 1;
+
+  &.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $dark;
+}
+
+.link-button {
+  margin-top: 6px;
+  padding: 6px 12px;
+  border: 1px solid $dark;
+  border-radius: 6px;
+  margin: 12px 0;
+  text-decoration: none;
+  color: inherit;
+
+  .link-button-wrap {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+
+  .link-button-icon {
+    margin-right: 3px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: $light-hover;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 600px) {
+  .link-button {
+    border: none;
+  }
+}
+

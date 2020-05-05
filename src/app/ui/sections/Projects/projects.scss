@@ -1,0 +1,19 @@
+.projects-content {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    >i {
+      font-size: 48px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .projects-content {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

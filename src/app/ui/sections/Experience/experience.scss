@@ -1,0 +1,24 @@
+.experience-content {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+
+    .card {
+      i {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .experience-list-item {
+    padding: 6px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .experience-content {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

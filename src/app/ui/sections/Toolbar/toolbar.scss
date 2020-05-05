@@ -1,0 +1,38 @@
+.toolbar {
+  position: absolute;
+  right: 16px;
+  z-index: 3;
+  top: 16px;
+
+  .tooltip {
+    color: $white;
+    font-family: Pacifico;
+    font-size: 24px;
+    margin-top: 6px;
+    text-align: center;
+  }
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px 0;
+  background-color: transparent;
+}
+
+.nav-item {
+  font-size: 24px;
+
+  a {
+    cursor: pointer;
+    color: $white;
+    padding: 2px;
+    margin: 12px;
+    text-decoration: none;
+    transition: 0.1s;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+}

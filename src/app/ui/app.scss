@@ -1,0 +1,60 @@
+@import "./components/components.scss";
+
+@import "./sections/Toolbar/toolbar.scss";
+@import "./sections/Header/header.scss";
+@import "./sections/About/about.scss";
+@import "./sections/Experience/experience.scss";
+@import "./sections/Technical/technical.scss";
+@import "./sections/Projects/projects.scss";
+@import "./sections/Footer/footer.scss";
+
+body {
+  background-color: $light;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  font-weight: 300;
+  color: $black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-wrap {
+  padding: 0 15%;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.section-wrap-alt {
+  padding: 48px 15%;
+  margin-bottom: 48px;
+  text-align: center;
+  background-color: $dark;
+  color: $light;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+    font-weight: 500;
+  }
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
