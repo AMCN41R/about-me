@@ -1,0 +1,50 @@
+@import "./components/components.scss";
+
+@import "./sections/Toolbar/toolbar.scss";
+@import "./sections/Header/header.scss";
+@import "./sections/About/about.scss";
+@import "./sections/Experience/experience.scss";
+@import "./sections/Technical/technical.scss";
+@import "./sections/Employment/employment.scss";
+@import "./sections/Projects/projects.scss";
+@import "./sections/Footer/footer.scss";
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-wrap {
+  padding: 0 15%;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+

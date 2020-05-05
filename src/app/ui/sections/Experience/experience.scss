@@ -1,0 +1,13 @@
+.experience-content {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .experience-content {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

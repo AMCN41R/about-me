@@ -1,0 +1,30 @@
+.pointer {
+  cursor: pointer;
+}
+
+.hover {
+  cursor: pointer;
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}

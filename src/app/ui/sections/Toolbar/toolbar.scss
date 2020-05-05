@@ -1,0 +1,30 @@
+.toolbar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 3;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px 0;
+  background-color: transparent;
+}
+
+.nav-item {
+  font-size: 24px;
+
+  a {
+    cursor: pointer;
+    color: #fff;
+    padding: 2px;
+    margin: 12px;
+    text-decoration: none;
+    transition: 0.1s;
+
+    &:hover {
+      color: #555;
+    }
+  }
+}

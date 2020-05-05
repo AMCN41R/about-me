@@ -1,0 +1,36 @@
+.technical-content {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+
+    img {
+      width: 96px;
+      height: 96px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .technical-content {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+
+    img {
+      width: 128px;
+      height: 128px;
+    }
+  }
+}
+}
+
+@media (min-width: 1200px) {
+  .technical-content {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+      width: 128px;
+      height: 128px;
+    }
+  }
+}
+}
