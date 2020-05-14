@@ -99,8 +99,8 @@ module.exports = ({ production, version } = {}) => ({
       from: `${srcDir}/app/static`,
       to: outDir
     },
-    { from: "./node_modules/react/umd/react.development.js", to: "./vendor/react.js" },
-    { from: "./node_modules/react-dom/umd/react-dom.development.js", to: "./vendor/react-dom.js" },
+    { from: "./node_modules/react/umd/react.production.min.js", to: "./vendor/react.js" },
+    { from: "./node_modules/react-dom/umd/react-dom.production.min.js", to: "./vendor/react-dom.js" },
     { from: "./node_modules/@fortawesome/fontawesome-free/css/all.min.css", to: "./vendor/fontawesome.css" },
     { from: "./node_modules/@fortawesome/fontawesome-free/webfonts", to: "./webfonts" },
     ]),

@@ -5,11 +5,11 @@ import FadeIn from 'ui/components/FadeIn';
 import Toolbar from 'ui/sections/Toolbar/Toolbar';
 import Header from 'ui/sections/Header/Header';
 import About from 'ui/sections/About/About';
-import Experience from 'ui/sections/Experience/Experience';
-import Technical from 'ui/sections/Technical/Technical';
-import Employment from 'ui/sections/Employment/Employment';
-import Projects from 'ui/sections/Projects/Projects';
-import Footer from 'ui/sections/Footer/Footer';
+// import Experience from 'ui/sections/Experience/Experience';
+// import Technical from 'ui/sections/Technical/Technical';
+// import Employment from 'ui/sections/Employment/Employment';
+// import Projects from 'ui/sections/Projects/Projects';
+// import Footer from 'ui/sections/Footer/Footer';
 
 const app: React.SFC = (): JSX.Element => {
 
@@ -22,11 +22,11 @@ const app: React.SFC = (): JSX.Element => {
 
       <FadeIn ms={1500}>
         <About />
-        <Experience />
+        {/* <Experience />
         <Technical />
         <Employment />
         <Projects />
-        <Footer />
+        <Footer /> */}
       </FadeIn>
     </>
   );

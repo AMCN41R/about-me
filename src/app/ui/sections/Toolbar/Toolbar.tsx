@@ -5,7 +5,7 @@ const toolbar: React.SFC = (): JSX.Element => {
     <div className="toolbar">
       <ul className="nav d-flex">
         <li className="nav-item">
-          <a href="mailto:alex@alexmcnair.net" target="_blank">
+          <a href="mailto:hello@alexmcnair.net" target="_blank">
             <i className="fas fa-inbox fa-fw"></i>
           </a>
         </li>
