@@ -94,15 +94,15 @@ module.exports = ({ production, version } = {}) => ({
       filename: production ? '[contenthash].css' : '[id].css',
       allChunks: true
     }),
-    new CopyWebpackPlugin([{
-      from: `${srcDir}/app/static`,
-      to: outDir
-    },
-    { from: "./node_modules/react/umd/react.development.js", to: "./vendor/react.js" },
-    { from: "./node_modules/react-dom/umd/react-dom.development.js", to: "./vendor/react-dom.js" },
-    { from: "./node_modules/@fortawesome/fontawesome-free/css/all.min.css", to: "./vendor/fontawesome.css" },
-    { from: "./node_modules/@fortawesome/fontawesome-free/webfonts", to: "./webfonts" },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: `${srcDir}/app/static`, to: outDir },
+        { from: "./node_modules/react/umd/react.development.js", to: "./vendor/react.js" },
+        { from: "./node_modules/react-dom/umd/react-dom.development.js", to: "./vendor/react-dom.js" },
+        { from: "./node_modules/@fortawesome/fontawesome-free/css/all.min.css", to: "./vendor/fontawesome.css" },
+        { from: "./node_modules/@fortawesome/fontawesome-free/webfonts", to: "./webfonts" },
+      ]
+    }),
     ...when(!production, new SourceMapDevToolPlugin({
       filename: "[file].map"
     }))
