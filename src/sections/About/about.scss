@@ -1,0 +1,31 @@
+.ns-about-section {
+
+  .about-header {
+    font-family: "Pacifico";
+    margin: 32px;
+    font-size: 48px;
+  }
+
+
+  .about-content-item {
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  .emphasis {
+    font-family: 'Pacifico';
+    font-size: 24px;
+  }
+
+  .about-link {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 500;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}

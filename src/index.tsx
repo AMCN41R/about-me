@@ -1,20 +1,41 @@
-// react imports
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-// looking good
 import './index.scss';
 
-// the app
-import App from 'ui/App';
-import ErrorBoundary from 'ui/components/ErrorBoundary';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-// lets go
+import ErrorBoundary from './components/ErrorBoundary';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
+
+const theme: DefaultTheme = {
+  colors: {
+    black: '#333',
+    white: '#fff',
+
+    dark: '#555',
+    darkHover: '#636363',
+
+    light: '#f2f2f2',
+    lightHover: '#e4e4e4',
+
+    alt: '#78abf7',
+  }
+};
+
 ReactDOM.render(
-  (
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
-  ),
-  document.getElementById('app')
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
+    </ThemeProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
