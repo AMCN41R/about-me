@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faLeaf, faPaperPlane, faServer } from '@fortawesome/free-solid-svg-icons';
+import { faLeaf, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import Grid from 'components/Grid';
 import GridItem from 'components/GridItem';
 import * as React from 'react';
 import Section from 'sections/Section';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import LinkButton from "components/LinkButton";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 interface IProps {
   title: string;
