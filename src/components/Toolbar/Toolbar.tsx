@@ -34,7 +34,7 @@ const Toolbar: React.FC = (): JSX.Element => {
     <Div>
       <List>
         <NavItem
-          href="mailto:hello@alexmcnair.net"
+          href="mailto:alex@augmentdigital.net"
           icon={faInbox}
           onMouseEnter={() => setTip('email')}
           onMouseLeave={() => setTip('')}

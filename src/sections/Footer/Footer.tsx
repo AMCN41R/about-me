@@ -37,7 +37,7 @@ const footer: React.FC = (): JSX.Element => (
       </div>
       <div className="d-flex justify-content-center">
         <FooterItem
-          href="mailto:hello@alexmcnair.net"
+          href="mailto:alex@augmentdigital.net"
           iconClassName="fas fa-inbox fa-fw"
         />
         <FooterItem
