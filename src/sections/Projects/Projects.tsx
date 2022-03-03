@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faLeaf, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faCodeBranch, faLeaf, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import Grid from 'components/Grid';
 import GridItem from 'components/GridItem';
 import * as React from 'react';
@@ -18,12 +18,12 @@ interface IProps {
 
 const ProjectCard: React.FC<IProps> = (props): JSX.Element => (
   <GridItem>
-    <FontAwesomeIcon icon={props.icon} size='3x' fixedWidth={true} />
+    <FontAwesomeIcon icon={props.icon} size='2x' fixedWidth={true} />
     <h3>{props.title}</h3>
-    <div className="flex-grow-1">
+    <div className="flex-grow-1 ps-2 pe-2">
       {props.text}
     </div>
-    <LinkButton href={props.href} icon={faGithub} text="View it on GitHib" />
+    <LinkButton href={props.href} icon={faCodeBranch} text="View it on GitHib" />
   </GridItem>
 );
 
@@ -35,7 +35,10 @@ const GridStyled = styled(Grid)`
 
 const projects: React.FC = (): JSX.Element => (
   <Section>
-    <h1>Projects</h1>
+    <div>
+      <FontAwesomeIcon icon={faGithub} size="3x" fixedWidth />
+    </div>
+    <h1>My Projects</h1>
     <div className="projects-content">
       <GridStyled>
         <ProjectCard

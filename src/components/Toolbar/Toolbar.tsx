@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { faInbox, faSignature, } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faSignature, } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import NavItem from './components/nav-item';
 
@@ -35,7 +35,7 @@ const Toolbar: React.FC = (): JSX.Element => {
       <List>
         <NavItem
           href="mailto:alex@augmentdigital.net"
-          icon={faInbox}
+          icon={faEnvelope}
           onMouseEnter={() => setTip('email')}
           onMouseLeave={() => setTip('')}
         />
